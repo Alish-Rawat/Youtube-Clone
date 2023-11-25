@@ -7,9 +7,9 @@ const Sidebar = () => {
   //   if (!isMenuOpen) return null;
   // (or)
   return !isMenuOpen ? null : (
-    <div className="mx-12 py-6 shadow-lg w-48  ">
+    <div className="mx-4 p-6 shadow-lg w-[25rem]  ">
       <ul className="font-medium text-xl font-sans">
-        <Link to="/">
+        <Link to="/Youtube-Clone">
           <li className="shadow-sm py-2 hover:bg-gray-100"> Home</li>
         </Link>
         <li className="shadow-sm py-2 hover:bg-gray-100">Shorts</li>

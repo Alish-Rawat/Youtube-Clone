@@ -52,7 +52,7 @@ const Head = () => {
           alt="menu"
           src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png"
         />
-        <a href="/">
+        <a href="/Youtube-Clone">
           <img
             className="h-10 mx-2"
             alt="Youtube-logo"
