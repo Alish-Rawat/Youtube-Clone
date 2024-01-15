@@ -44,11 +44,11 @@ const Head = () => {
     dispatch(toggleMenu());
   };
   return (
-    <div className="grid grid-flow-col px-5 py-3 m-2 shadow-md ">
-      <div className="flex col-span-1">
+    <div className="grid grid-flow-col sm:px-5 py-3 sm:m-2 shadow-md border border-red-800 w-full">
+      <div className="flex sm:col-span-1 col-span-3 h-10 border border-blue-900">
         <img
           onClick={() => toggleMenuHandler()}
-          className="h-9 cursor-pointer"
+          className="h-10 cursor-pointer"
           alt="menu"
           src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png"
         />
@@ -60,10 +60,10 @@ const Head = () => {
           />
         </a>
       </div>
-      <div className="col-span-10 px-10">
+      <div className="sm:col-span-10 col-span-8 sm:px-10">
         <div>
           <input
-            className="w-2/3 px-7 font-sans border text-lg border-gray-400 py-[.40rem] rounded-l-full focus:outline-blue-300"
+            className=" w-2/3 px-7 h-10 font-sans border text-lg border-gray-400 py-[.40rem] rounded-l-full focus:outline-blue-300 "
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -87,14 +87,14 @@ const Head = () => {
           )}
         </div>
       </div>
-      <div className="flex  space-x-8 ">
+      <div className="flex  sm:space-x-8 ">
         <img
-          className="h-7 w-7 cursor-pointer mt-2 srounded-full"
+          className="h-7 w-7 cursor-pointer mt-2 srounded-full hidden lg:block"
           alt="user-icon"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Video_camera_icon.svg/1200px-Video_camera_icon.svg.png"
         />
         <img
-          className="h-8 w-7 cursor-pointer mt-1 shadow-lg rounded-full"
+          className="h-8 w-7 cursor-pointer mt-1 shadow-lg rounded-full hidden lg:block"
           alt="user-icon"
           src="https://cdn-icons-png.flaticon.com/512/5035/5035563.png"
         />
