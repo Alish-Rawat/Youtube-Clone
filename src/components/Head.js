@@ -44,8 +44,8 @@ const Head = () => {
     dispatch(toggleMenu());
   };
   return (
-    <div className="grid grid-flow-col sm:px-5 py-3 sm:m-2 shadow-md border border-red-800 w-full">
-      <div className="flex sm:col-span-1 col-span-2 h-10 border border-blue-900">
+    <div className="grid grid-flow-col sm:px-5 py-3 sm:p-4 shadow-md border border-red-800 w-full">
+      <div className="flex sm:col-span-1 col-span-2 h-10 ">
         <img
           onClick={() => toggleMenuHandler()}
           className="h-10 cursor-pointer"
@@ -63,7 +63,7 @@ const Head = () => {
       <div className="sm:col-span-10 col-span-6 pl-2 sm:px-10">
         <div>
           <input
-            className=" sm:w-2/3w w-[8rem] sm:px-7   sm:h-10 h-9 font-sans border text-lg border-gray-400 sm:py-[.40rem] rounded-l-full focus:outline-blue-300 "
+            className=" sm:w-2/3 w-[8rem] sm:px-7   sm:h-10 h-9 font-sans border text-lg border-gray-400 sm:py-[.40rem] rounded-l-full focus:outline-blue-300 "
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}

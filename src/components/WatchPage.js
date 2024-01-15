@@ -9,19 +9,17 @@ const WatchPage = () => {
   const [searchParams] = useSearchParams();
   console.log(searchParams.get("v"));
 
-  
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(closeMenu());
   }, []);
   return (
-    <div className="w-full">
-      <div className="p-5 flex ">
-        <div>
+    <div className="w-full ">
+      <div className="p-5 sm:flex w-full">
+        <div className=" sm:w-[70%] border border-yellow-500 h-[20rem] sm:h-[35rem]">
           <iframe
-            width="900"
-            height="500"
+            width="100%"
+            height="100%"
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
             title="YouTube video player"
             frameBorder="0"
@@ -29,7 +27,7 @@ const WatchPage = () => {
             allowFullScreen
           ></iframe>
         </div>
-        <div className="w-full">
+        <div className="w-[20%] mt-4">
           <LiveChat />
         </div>
       </div>
