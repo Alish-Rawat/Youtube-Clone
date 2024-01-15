@@ -45,7 +45,7 @@ const Head = () => {
   };
   return (
     <div className="grid grid-flow-col sm:px-5 py-3 sm:m-2 shadow-md border border-red-800 w-full">
-      <div className="flex sm:col-span-1 col-span-3 h-10 border border-blue-900">
+      <div className="flex sm:col-span-1 col-span-2 h-10 border border-blue-900">
         <img
           onClick={() => toggleMenuHandler()}
           className="h-10 cursor-pointer"
@@ -60,17 +60,17 @@ const Head = () => {
           />
         </a>
       </div>
-      <div className="sm:col-span-10 col-span-8 sm:px-10">
+      <div className="sm:col-span-10 col-span-6 pl-2 sm:px-10">
         <div>
           <input
-            className=" w-2/3 px-7 h-10 font-sans border text-lg border-gray-400 py-[.40rem] rounded-l-full focus:outline-blue-300 "
+            className=" sm:w-2/3w w-[8rem] sm:px-7   sm:h-10 h-9 font-sans border text-lg border-gray-400 sm:py-[.40rem] rounded-l-full focus:outline-blue-300 "
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             onFocus={() => setShowSuggestions(true)}
             onBlur={() => setShowSuggestions(false)}
           />
-          <button className="border border-gray-400 py-[.40rem]  rounded-r-full bg-gray-200   px-5 text-lg font-bold">
+          <button className="border border-gray-400 sm:py-[.40rem]  rounded-r-full bg-gray-200  px-2 py-[3px] sm:px-5 text-lg font-bold">
             &#128269;
           </button>
           {showSuggestions && (
@@ -87,7 +87,7 @@ const Head = () => {
           )}
         </div>
       </div>
-      <div className="flex  sm:space-x-8 ">
+      <div className="sm:flex block sm:space-x-8 ">
         <img
           className="h-7 w-7 cursor-pointer mt-2 srounded-full hidden lg:block"
           alt="user-icon"
