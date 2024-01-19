@@ -48,7 +48,7 @@ const Head = () => {
       <div className="flex sm:col-span-1 col-span-2 h-10 ">
         <img
           onClick={() => toggleMenuHandler()}
-          className="h-10 cursor-pointer"
+          className="h-10 cursor-pointer hidden lg:block"
           alt="menu"
           src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-5.png"
         />
