@@ -63,7 +63,7 @@ const Head = () => {
       <div className="sm:col-span-10 col-span-6 pl-2 sm:px-10">
         <div>
           <input
-            className=" sm:w-2/3 w-[8rem] sm:px-7   sm:h-10 h-9 font-sans border text-lg border-gray-400 sm:py-[.40rem] rounded-l-full focus:outline-blue-300 "
+            className=" sm:w-2/3 w-[8rem] sm:px-7   sm:h-10 h-9 font-sans border text-lg border-gray-400 sm:py-[.40rem] rounded-l-full focus:outline-blue-300 pl-4 "
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -74,7 +74,7 @@ const Head = () => {
             &#128269;
           </button>
           {showSuggestions && (
-            <ul className="absolute bg-white py-2 px-4 mx-1 w-[26rem] shadow-lg rounded-lg border border-gray-200">
+            <ul className="absolute bg-white py-2 px-4 mx-1 sm:w-[26rem] shadow-lg rounded-lg border border-gray-200">
               {suggestions.map((i) => (
                 <li
                   key={i}
