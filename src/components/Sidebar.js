@@ -8,7 +8,7 @@ const Sidebar = () => {
   // (or)
   return !isMenuOpen ? null : (
     <div
-      className="mx-4 p-6 shadow-lg w-[25rem] hidden lg:block
+      className="mx-4 p-6 shadow-lg w-[120rem]  hidden lg:block
     "
     >
       <ul className="font-medium text-xl font-sans cursor-pointer">

@@ -17,7 +17,7 @@ const list = [
 
 const ButtonList = () => {
   return (
-    <div className="flex sm:m-3 overflow-y-auto w-[25rem] sm:w-[70rem] border  sm:justify-center">
+    <div className="flex sm:m-3 overflow-y-auto w-[25rem] sm:w-[70rem] border border-gray-100 rounded-2xl  sm:justify-center">
       {list.map((list, i) => (
         <Button key={i} name={list} />
       ))}

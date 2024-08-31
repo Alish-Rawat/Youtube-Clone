@@ -3,6 +3,7 @@ import { toggleMenu } from "../utils/appSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { YOUTUBE_SEACCH_API } from "../utils/contants";
 import { cacheResults } from "../utils/searchSlice.";
+import youtubeImg from "../images/youtube.jpg";
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -54,9 +55,9 @@ const Head = () => {
         />
         <a href="/Youtube-Clone">
           <img
-            className="h-10 mx-2"
+            className="h-16 w-32 mx-2   -translate-y-3"
             alt="Youtube-logo"
-            src="https://www.shutterstock.com/image-vector/youtube-logo-social-media-icon-260nw-2310134969.jpg"
+            src={youtubeImg}
           />
         </a>
       </div>
